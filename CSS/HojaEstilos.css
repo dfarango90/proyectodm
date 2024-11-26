@@ -1,0 +1,99 @@
+body {
+    background: black;
+    
+}
+
+.Contenedor1 {
+    display: flex;
+    justify-content: center; /* Centra el contenido del contenedor principal */
+    background-color: white;
+}
+
+.Prefooter {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
+    align-items: center; /* Alinea verticalmente al centro */
+    width: 50%; /* Asegura que el footer use todo el ancho disponible */
+    padding: 10px; /* Añade espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+footer span.logo {
+    margin-left: left; /* Empuja el logo hacia la derecha */
+    width: 20px;
+    align-items: left;
+}
+
+.Menu {
+    text-decoration: none; /* Elimina subrayados */
+    margin: 2 5px; /* Espaciado entre elementos del menú */
+    font-size: 15px; /* Ajusta el tamaño de fuente */
+    color: black; /* Ajusta el color del texto */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Asegura que haya espacio entre el menú y el logo */
+    align-items: center;
+}
+
+footer a.Menu {
+    flex-grow: 1; /* Asegura que el menú ocupe el espacio necesario */
+    text-align: center; /* Centra el texto de los enlaces */
+}
+
+.principal {
+    color: white; /* Define el color del texto como blanco. */
+    text-align: center; /* Centra horizontalmente el texto dentro del contenedor. */
+    font-style: italic; /* Aplica un estilo cursivo al texto. */
+    margin: 44px; /* Agrega un espacio de 44 píxeles alrededor del contenedor. */
+}
+
+footer.span.material-icons{
+    margin: 2 5px;
+}
+
+.slider {
+    position: relative; /* Permite posicionar elementos internos (como botones) de forma relativa al contenedor. */
+    width: 100%; /* El slider ocupará todo el ancho disponible del contenedor padre. */
+    max-width: 600px; /* Define un ancho máximo de 600 píxeles para el slider. */
+    margin: auto; /* Centra el slider horizontalmente en la página. */
+    overflow: hidden; /* Oculta el contenido que desborda los límites del contenedor. */
+    border: 2px solid #ddd; /* Agrega un borde de 2 píxeles con color gris claro alrededor del slider. */
+    border-radius: 10px; /* Redondea las esquinas del slider con un radio de 10 píxeles. */
+}
+
+.slides {
+    display: flex; /* Coloca las imágenes una al lado de la otra en una fila. */
+    transition: transform 0.5s ease-in-out; /* Aplica una animación suave al transformar la posición. */
+    width: 300%; /* Establece el ancho total del contenedor de slides como tres veces el ancho del slider. */
+}
+
+.slides img {
+    width: 40%; /* Define el ancho de cada imagen como el 18% del contenedor padre. */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción de las imágenes. */
+}
+
+button {
+    position: absolute; /* Posiciona los botones en relación al contenedor padre (.slider). */
+    top: 50%; /* Ubica verticalmente los botones en el centro del slider. */
+    transform: translateY(-50%); /* Ajusta la posición vertical de los botones para que estén perfectamente centrados. */
+    background: rgba(0, 0, 0, 0.5); /* Agrega un fondo negro semitransparente al botón. */
+    color: #fff; /* Define el color del texto dentro del botón como blanco. */
+    border: none; /* Elimina el borde predeterminado del botón. */
+    padding: 10px 20px; /* Agrega espacio interno de 10 píxeles vertical y 20 píxeles horizontalmente. */
+    cursor: pointer; /* Cambia el puntero del mouse a la mano al pasar sobre el botón. */
+    z-index: 1000; /* Asegura que los botones estén sobre otros elementos. */
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8); /* Al pasar el mouse sobre el botón, oscurece el fondo. */
+}
+
+.prev {
+    left: 20px; /* Posiciona el botón anterior a 10 píxeles del lado izquierdo del slider. */
+}
+
+.next {
+    right: 20px; /* Posiciona el botón siguiente a 10 píxeles del lado derecho del slider. */
+}
